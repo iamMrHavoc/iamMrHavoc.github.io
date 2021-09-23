@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--linking css file-->
+     <link rel="stylesheet" href="css/contact.css">
+	<!--linking javascript file-->
+    <script src="javascript/contact.js"></script>
+    <title> Contact </title>
+    </head>
+    <body>
+		<!--start of navigation bar-->
+        <nav>
+			<button><a href="home.html" style="text-decoration: none"><span>S</span>ovit</a></button>
+            <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="cv.html">CV</a></li>
+            <li><a href="blog.html">Blogs</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+		<div class="contacttitle">
+         <h1>CONTACT US</h1>
+			<div id="error_message"></div>
+			<!--start of form for contact page-->
+            <form id="myform" onsubmit="return validation()">
+               <div class="inputtype">
+                     <input type="text" name="" placeholder="Your First Name" id="fname" class="input">
+                </div>
+                <div class="inputtype">
+                    <input type="text" name="" placeholder="Your Last Name" id="lname" class="input">
+				</div>
+                <div class="inputtype">
+                    <input type="text" name="" placeholder="Your Email" id="email" class="input">
+                </div>
+                <div class="inputtype">
+					<textarea id="message" placeholder="Your Message" id="message"></textarea>
+                </div>
+         <div class="button">
+			 <input type="Submit">
+		 </div>
+				<!--end of form -->
+        </form><br>
+			<!--hyperlinks-->
+		    <a href="https://www.facebook.com/sovit.thapa.9047" target="_blank" class="icon"><img src="img/ff.jpg" style="width: 40px; height: 40px;"></a>
+		    <a href="https://www.instagram.com/sovitthapamgr/" target="_blank" class="icon"><img src="img/inst.png" style="width: 40px; height: 40px;"></a>
+			<a href="https://www.youtube.com/channel/UC2Kfo_PX83MQgc5HMohvEkA?view_as=subscriber" target="_blank" class="icon"><img src="img/yt.jpg" style="width: 40px; height: 40px;"></a><br><br>
+			<p style="color: aliceblue;">Copyright &copy; Sovit Thapa | 2020</p>
+		</div>
+	</body>
+</html>

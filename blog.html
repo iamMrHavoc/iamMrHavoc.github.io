@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title> Blog </title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			background: url("img/2.jpg");
+			background-size: cover;
+			text-align: center;
+		}
+
+		ul {
+			list-style-type: none;
+			padding: 0;
+			margin: 0;
+		}
+
+		nav {
+			width: 100%;
+			height: 70px;
+			background-color: black;
+			line-height: 70px;
+		}
+
+		nav button {
+			padding-top: 0.2cm;
+			border: black;
+			font-size: 50px;
+			font-weight: bold;
+			cursor: pointer;
+			color: white;
+			background-color: black;
+			letter-spacing: 0px;
+			float: left;
+		}
+
+		nav button a {
+			color: white;
+		}
+
+		nav button:hover,
+		nav button a:hover {
+			padding: 0.35cm;
+			border: black;
+			color: chartreuse;
+			font-size: 40px;
+			font-weight: bold;
+		}
+
+		.nav span {
+			color: red;
+			font-weight: bold;
+		}
+
+		nav ul {
+			float: right;
+			margin-right: 5px;
+		}
+
+		nav ul li {
+			list-style-type: none;
+			display: inline-block;
+		}
+
+		nav ul li a {
+			font-size: 20px;
+			text-decoration: none;
+			color: white;
+			padding: 30px;
+		}
+
+		nav ul li:hover {
+			background-color: #36979e;
+			color: black;
+		}
+
+		h1 {
+			font-size: 60px;
+			color: chartreuse;
+		}
+
+		.blog p {
+			font-size: 35px;
+			color: antiquewhite;
+			background: black;
+			background: rgba(0, 0, 0, 0.4);
+		}
+
+		footer {
+			text-align: center;
+			background-color: #000103;
+			font-size: 18px;
+			font-family: serif;
+			padding-bottom: 40px;
+			background: rgba(0, 0, 0, 0.6);
+			height: 90px;
+		}
+
+		#remainingText {
+			display: none;
+		}
+
+	</style>
+</head>
+
+<body>
+	<nav>
+		<button><a href="home.html" style="text-decoration: none"><span style="color: red;">S</span>ovit</a></button>
+		<ul>
+			<li><a href="home.html">Home</a></li>
+			<li><a href="cv.html">CV</a></li>
+			<li><a href="blog.html">Blogs</a></li>
+			<li><a href="research.html">Research</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</nav>
+	<!--division for image-->
+	<div class="image">
+		<img src="img/tech.jpg" style="height=10%; flex: auto;">
+	</div>
+	<div class="blog">
+		<h1 style="text-align: center;"> Impact of Technology.</h1>
+		<p>Technology is defined as the science or knowledge put into pracical use to solve problems or invent useful tools. Computer, Internet are some examples of technology. It have some impacts on human life by mean of physically and mentally in a both positive and negative way. Technology and Human Life cannot be separated. Each and every day we have used technologyand we're getting more dependent to it.
+		</p>
+		<p>Some of the positive impact of technology in human life are it helps in our daily life and daily work easier and faster such as travelling, communicating and many more. We are so familiar with technology now so we all know its positive impacts. So, some of the negative impacts are people are getting adddicted by some form of technology such as social medias, video games etc.. <span id="remainingText"> While on the other hand, the negative impacts of social media platforms include issues like increased levels of depression and anxiety, poor sleep quality, dissatisfaction with body image and cyberbullying. Natural Resources are decreasing day by day for the increment of technology. Pollution can also be counted as negative impact because many machines, factories, vechiles are its factors. So, in the end I just wanna say the technology must be handled comparing the status of nature.</span></p>
+		<button onclick="changeText();" id="btn">Show more</button>
+	</div>
+	<!--javascript for read more working functionally-->
+	<script>
+		function changeText() {
+			var moreText = document.getElementById("remainingText");
+			var btn = document.getElementById("btn");
+
+			if (moreText.style.display == "none") {
+				moreText.style.display = "inline";
+				btn.innerHTML = "Show less."
+			} else {
+				moreText.style.display = "none";
+				btn.innerHTML = "Show more."
+			}
+		} 
+	</script>
+	<!--start of footer-->
+	<footer>
+		<div class="foot">
+			<p style="color: aliceblue;">Find me on:</p>
+			<a href="https://www.facebook.com/sovit.thapa.9047" target="_blank" class="icon"><img src="img/ff.jpg" style="width: 40px; height: 40px;"></a>
+			<a href="https://www.instagram.com/sovitthapamgr/" target="_blank" class="icon"><img src="img/inst.png" style="width: 40px; height: 40px;"></a>
+			<a href="https://www.youtube.com/channel/UC2Kfo_PX83MQgc5HMohvEkA?view_as=subscriber" target="_blank" class="icon"><img src="img/yt.jpg" style="width: 40px; height: 40px;"></a>
+		</div>
+		<p style="color: aliceblue;">Copyright &copy; Sovit Thapa | 2020, All right reserved.</p>
+		<!--end of footer-->
+	</footer>
+</body>
+
+</html>

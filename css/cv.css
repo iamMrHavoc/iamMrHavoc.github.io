@@ -1,0 +1,101 @@
+body{
+    margin:0;
+    padding:0;
+    background: url(../img/cv.jpg);
+    background-size: cover;
+    text-align: center;
+	color: white;
+}
+ul{
+   list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav{
+    width: 100%;
+    height:70px;
+    background-color: black;
+    line-height: 70px;
+}
+nav button {
+	padding-top: 0.2cm;
+	border: black;
+	font-size: 50px;
+	font-weight: bold;
+	cursor: pointer;
+	color:white;
+	background-color: black;
+	letter-spacing: 0px;
+	float: left;
+}
+nav button a{
+	color: white;
+}
+nav button:hover,
+nav button a:hover{
+	padding: 0.35cm;
+	border: black;
+	color:chartreuse;
+	font-size: 40px;
+	font-weight: bold;
+}
+span{
+	color:red;
+	font-weight: bold;
+}
+nav ul{
+    float: right;
+    margin-right: 5px;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+}
+nav ul li a{
+    font-size: 20px;
+    text-decoration: none;
+    color:white;
+    padding:30px;
+}
+nav ul li:hover{
+    background-color: #36979e;
+    color:black;
+}
+.personal{
+	background-color: #16a19a;
+}
+.content{
+	padding-left: 18px;
+}
+.info{
+	background-color:#16a19a;
+}
+.qualifications{
+	background-color:#16a19a;
+}
+.exp{
+	background-color:#16a19a;
+}
+.languages{
+	background-color:#16a19a;
+}
+.profile{
+	margin: 5px;
+	margin-bottom: 30px;
+}
+h1,h2{
+	color:Black;
+}
+footer {
+	text-align: center;
+	background-color: #000103;
+	font-size: 18px;
+	font-family: serif;
+	padding-bottom: 40px;
+	background: rgba(0, 0, 0, 0.8);
+	height: 90px;
+}
+
+
+
+
